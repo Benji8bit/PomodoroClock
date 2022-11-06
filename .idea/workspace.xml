@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46d239c9-cdac-4723-9115-2d26dba035f6" name="Changes" comment="Added TelegramAPI dependencies in pom.xml ( from https://mvnrepository.com/artifact/org.telegram)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/telegram/TelegramBot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/telegram/commands/ServiceCommand.java" afterDir="false" />
+    <list default="true" id="46d239c9-cdac-4723-9115-2d26dba035f6" name="Changes" comment="Created TelegramBot stub with final variables and some methods">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/telegram/commands/ServiceCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/telegram/commands/ServiceCommand.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +59,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667742059452</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Created TelegramBot stub with final variables and some methods">
+      <created>1667745076199</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667745076199</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -78,6 +83,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Added TelegramAPI dependencies in pom.xml ( from https://mvnrepository.com/artifact/org.telegram)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added TelegramAPI dependencies in pom.xml ( from https://mvnrepository.com/artifact/org.telegram)" />
+    <MESSAGE value="Created TelegramBot stub with final variables and some methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created TelegramBot stub with final variables and some methods" />
   </component>
 </project>
