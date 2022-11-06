@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46d239c9-cdac-4723-9115-2d26dba035f6" name="Changes" comment="Created ServiceCommand for extending">
-      <change afterPath="$PROJECT_DIR$/src/main/java/telegram/commands/BeginCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/telegram/commands/HelpCommand.java" afterDir="false" />
+    <list default="true" id="46d239c9-cdac-4723-9115-2d26dba035f6" name="Changes" comment="Created BeginCommand and HelpCommand">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/telegram/TelegramBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/telegram/TelegramBot.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667752736358</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Created BeginCommand and HelpCommand">
+      <created>1667776282342</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667776282342</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,6 +117,7 @@
     <MESSAGE value="Added TelegramAPI dependencies in pom.xml ( from https://mvnrepository.com/artifact/org.telegram)" />
     <MESSAGE value="Created TelegramBot stub with final variables and some methods" />
     <MESSAGE value="Created ServiceCommand for extending" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created ServiceCommand for extending" />
+    <MESSAGE value="Created BeginCommand and HelpCommand" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created BeginCommand and HelpCommand" />
   </component>
 </project>
