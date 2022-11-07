@@ -15,7 +15,7 @@ public class TelegramBot extends TelegramLongPollingCommandBot {
     public static final String BOT_TOKEN = "5697462471:AAG3cj5OdyIr86GtdYovAhNdN8e-H5OcnAk";
     public static final String BOT_USERNAME = "PomodoroClockBot";
 
-    public static final String CHAT_ID = "922999376";
+    public static final String CHAT_ID = "922999376"; //"970378648"
 
     public static final int WORK = 5;
     public static final int BREAK = 5;
