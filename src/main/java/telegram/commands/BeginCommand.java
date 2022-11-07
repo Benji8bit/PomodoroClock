@@ -6,6 +6,8 @@ import org.telegram.telegrambots.meta.bots.AbsSender;
 
 public class BeginCommand extends ServiceCommand {
 
+    public static boolean isBegin = false;
+
     public BeginCommand(String commandIdentifier, String description) {
         super(commandIdentifier, description);
     }
@@ -14,6 +16,7 @@ public class BeginCommand extends ServiceCommand {
     public void execute(AbsSender absSender, User user, Chat chat, String[] strings) {
         sendAnswer(absSender, chat.getId(), "Пожалуйста, введите количество дел или /help " +
                 "для вызова помощи.");
+        isBegin = true;
     }
 }
 

@@ -9,13 +9,15 @@ import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 import telegram.commands.BeginCommand;
 import telegram.commands.HelpCommand;
 
+import java.util.concurrent.TimeUnit;
+
 public class TelegramBot extends TelegramLongPollingCommandBot {
     public static final String BOT_TOKEN = "5697462471:AAG3cj5OdyIr86GtdYovAhNdN8e-H5OcnAk";
     public static final String BOT_USERNAME = "PomodoroClockBot";
 
     public static final String CHAT_ID = "922999376";
 
-    public static final int WORK = 25;
+    public static final int WORK = 5;
     public static final int BREAK = 5;
 
     public TelegramBot() throws TelegramApiException {
@@ -41,10 +43,39 @@ public class TelegramBot extends TelegramLongPollingCommandBot {
 
     @Override
     public void processNonCommandUpdate(Update update) {
-
+        if (update.hasMessage() && isNumeric(update.getMessage().getText()) && BeginCommand.isBegin) {
+            BeginCommand.isBegin = false;
+            String message;
+            int count = Integer.parseInt(update.getMessage().getText()); // Количество дел
+            for (int i = 1; i <= count; i++) {
+                message = "Задача № " + i + " началась.";
+                sendMessage(message);
+                try {
+                    TimeUnit.SECONDS.sleep(WORK);
+                } catch (InterruptedException ie) {
+                    throw new RuntimeException(ie);
+                }
+                message = "Задача № " + i + " завершилась.";
+                sendMessage(message);
+                if (count - i != 0) {
+                    message = "Время отдыхать!";
+                    sendMessage(message);
+                    try {
+                        TimeUnit.SECONDS.sleep(BREAK);
+                    } catch (InterruptedException ie) {
+                        throw new RuntimeException(ie);
+                    }
+                    message = "Время работать!";
+                    sendMessage(message);
+                }
+            }
+        } else {
+            String message = "Я не понимаю!";
+            sendMessage(message);
+        }
     }
 
-    private void sendMessage (String messageText) {
+    private void sendMessage(String messageText) {
         SendMessage message = new SendMessage();
         message.setChatId(CHAT_ID);
         message.setText(messageText);
@@ -55,7 +86,7 @@ public class TelegramBot extends TelegramLongPollingCommandBot {
         }
     }
 
-    public static boolean isNumeric (String strNum) {
+    public static boolean isNumeric(String strNum) {
         if (strNum == null) {
             return false;
         }
