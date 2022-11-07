@@ -15,7 +15,7 @@ public class TelegramBot extends TelegramLongPollingCommandBot {
     public static final String BOT_TOKEN = "5697462471:AAG3cj5OdyIr86GtdYovAhNdN8e-H5OcnAk";
     public static final String BOT_USERNAME = "PomodoroClockBot";
 
-    public static final String CHAT_ID = "922999376"; //"970378648"
+    public static String chatId; //"922999376"; //"970378648"
 
     public static final int WORK = 5;
     public static final int BREAK = 5;
@@ -43,6 +43,7 @@ public class TelegramBot extends TelegramLongPollingCommandBot {
 
     @Override
     public void processNonCommandUpdate(Update update) {
+        chatId = update.getMessage().getChatId().toString();
         if (update.hasMessage() && isNumeric(update.getMessage().getText()) && BeginCommand.isBegin) {
             BeginCommand.isBegin = false;
             String message;
@@ -77,7 +78,7 @@ public class TelegramBot extends TelegramLongPollingCommandBot {
 
     private void sendMessage(String messageText) {
         SendMessage message = new SendMessage();
-        message.setChatId(CHAT_ID);
+        message.setChatId(chatId);
         message.setText(messageText);
         try {
             execute(message);

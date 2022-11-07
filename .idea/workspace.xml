@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46d239c9-cdac-4723-9115-2d26dba035f6" name="Changes" comment="Created processNonCommandUpdate method fixes">
+    <list default="true" id="46d239c9-cdac-4723-9115-2d26dba035f6" name="Changes" comment="TelegramBot fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/telegram/TelegramBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/telegram/TelegramBot.java" afterDir="false" />
     </list>
@@ -112,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667782787728</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="TelegramBot fixes">
+      <created>1667857882685</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1667857882685</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -134,6 +141,7 @@
     <MESSAGE value="Created BeginCommand and HelpCommand" />
     <MESSAGE value="Created sendMessage and isBoolean methods" />
     <MESSAGE value="Created processNonCommandUpdate method fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created processNonCommandUpdate method fixes" />
+    <MESSAGE value="TelegramBot fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="TelegramBot fixes" />
   </component>
 </project>
